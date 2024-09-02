@@ -20,7 +20,7 @@ class _MyHistoryPageState extends State<History> {
       body:Row(
         children: [
           // gameCards(),
-          HeadBanner()
+          // HeadBanner()
         ],
       ),
     );

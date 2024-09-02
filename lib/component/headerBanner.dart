@@ -32,6 +32,15 @@ class _HeadBannerState extends State<HeadBanner> {
                     width: 274,
                     height: 160,
                     color: Colors.transparent,
+                    decoration:const BoxDecoration(
+                        gradient:  LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Color.fromRGBO(0, 0, 0, 0),
+                        Color.fromRGBO(0, 0, 0, 0.8),
+                      ],
+                    )),
                     padding: const EdgeInsets.all(16),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -121,7 +130,7 @@ class _HeadBannerState extends State<HeadBanner> {
                                     color: Colors.white, fontSize: 14),
                               ),
                               style: ElevatedButton.styleFrom(
-                                primary:
+                                backgroundColor:
                                     Color.fromRGBO(54, 255, 255, 0.82), // 背景颜色
                                 shape: RoundedRectangleBorder(
                                     borderRadius:
